@@ -18,9 +18,25 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>Archives - Hexo</title>
+  <title>apkleaks的安装与使用 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,9 +163,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Archive">
+            <span class="h2" id="subtitle" title="apkleaks的安装与使用">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-03-27 02:23" pubdate>
+        March 27, 2021 am
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      286 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      3
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -162,52 +215,97 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">3 posts in total.</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/03/27/apkleaks%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">apkleaks的安装与使用</span>
-      <time style="float: right;">03-27</time>
-    </a>
-  
-    
-    <a href="/2021/03/27/%E5%85%B3%E4%BA%8E%E6%9F%90so%E5%87%BD%E6%95%B0%E7%9A%84%E5%8A%A0%E8%A7%A3%E5%AF%86%EF%BC%8C%E4%BB%A5%E5%8F%8A%E8%87%AA%E4%BF%AE%E5%A4%8D/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">关于某so函数的加解密，以及自修复</span>
-      <time style="float: right;">03-27</time>
-    </a>
-  
-    
-    <a href="/2021/03/22/expression/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">吐槽</span>
-      <time style="float: right;">03-22</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">apkleaks的安装与使用</h1>
+            
+            <div class="markdown-body">
+              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上次开会的时候，听小帅有个可以从app中找接口的一个github项目，最近一直忙资产收集，所以没空看，今晚刚好有空，就clone了一份，并安装了，我习惯用kali了，所以这里安装也是以kali作为主力</p>
+<h1 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h1><ul>
+<li><p>clone一份到本地</p>
+</li>
+<li><p>进入目录后，输入pip3 install -r requirement.txt</p>
+</li>
+<li><p>然后就可以使用python apkleads.py -f xx.apk</p>
+</li>
+<li><p>发现提醒没有jadx的话，要选y，就会自动下载并安装，刚刚去github简介下看了，作者说是apkleaks基于jadx来反编译的</p>
+<p><img src="https://raw.githubusercontent.com/YenKoc/YenKoc_tuchuang/main/images20210327022839.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<p>下载后，就会发现同目录下，有一个jadx文件夹了，至此安装完成</p>
+<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>python apkleaks.py -f xxx.apk</p>
+<p>然后就开始执行扫描，会将ip和端口都提取出来，不过我实测还是不够准确的，如果只找接口的话，怎么会这么多其他的东西扫出来呢。。我也感觉奇怪，我建议在这句命令后-o xx.txt, 有些app还是挺大的，结果估计会很多，找个文件保存比较合适</p>
+<p><img src="https://raw.githubusercontent.com/YenKoc/YenKoc_tuchuang/main/images20210327023215.png" srcset="/img/loading.gif" lazyload></p>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/android%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/">android工具使用</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/03/27/%E5%85%B3%E4%BA%8E%E6%9F%90so%E5%87%BD%E6%95%B0%E7%9A%84%E5%8A%A0%E8%A7%A3%E5%AF%86%EF%BC%8C%E4%BB%A5%E5%8F%8A%E8%87%AA%E4%BF%AE%E5%A4%8D/">
+                        <span class="hidden-mobile">关于某so函数的加解密，以及自修复</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -288,9 +386,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 

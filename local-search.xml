@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>apkleaks的安装与使用</title>
+    <link href="/2021/03/27/apkleaks%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <url>/2021/03/27/apkleaks%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上次开会的时候，听小帅有个可以从app中找接口的一个github项目，最近一直忙资产收集，所以没空看，今晚刚好有空，就clone了一份，并安装了，我习惯用kali了，所以这里安装也是以kali作为主力</p><h1 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h1><ul><li><p>clone一份到本地</p></li><li><p>进入目录后，输入pip3 install -r requirement.txt</p></li><li><p>然后就可以使用python apkleads.py -f xx.apk</p></li><li><p>发现提醒没有jadx的话，要选y，就会自动下载并安装，刚刚去github简介下看了，作者说是apkleaks基于jadx来反编译的</p><p><img src="https://raw.githubusercontent.com/YenKoc/YenKoc_tuchuang/main/images20210327022839.png"></p></li></ul><p>下载后，就会发现同目录下，有一个jadx文件夹了，至此安装完成</p><h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>python apkleaks.py -f xxx.apk</p><p>然后就开始执行扫描，会将ip和端口都提取出来，不过我实测还是不够准确的，如果只找接口的话，怎么会这么多其他的东西扫出来呢。。我也感觉奇怪，我建议在这句命令后-o xx.txt, 有些app还是挺大的，结果估计会很多，找个文件保存比较合适</p><p><img src="https://raw.githubusercontent.com/YenKoc/YenKoc_tuchuang/main/images20210327023215.png"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>android工具使用</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于某so函数的加解密，以及自修复</title>
     <link href="/2021/03/27/%E5%85%B3%E4%BA%8E%E6%9F%90so%E5%87%BD%E6%95%B0%E7%9A%84%E5%8A%A0%E8%A7%A3%E5%AF%86%EF%BC%8C%E4%BB%A5%E5%8F%8A%E8%87%AA%E4%BF%AE%E5%A4%8D/"/>
     <url>/2021/03/27/%E5%85%B3%E4%BA%8E%E6%9F%90so%E5%87%BD%E6%95%B0%E7%9A%84%E5%8A%A0%E8%A7%A3%E5%AF%86%EF%BC%8C%E4%BB%A5%E5%8F%8A%E8%87%AA%E4%BF%AE%E5%A4%8D/</url>
